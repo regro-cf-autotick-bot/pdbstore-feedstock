@@ -27,24 +27,24 @@ requirements:
     - Jinja2
 
 test:
-    source_files:
-        - tests/
-        - setup.py
-    imports:
-        - pdbstore
-    commands:
-        - pytest ./tests/unit
-        - pytest ./tests/cli
-        - pip check
-    requires:
-        - pip
-        - mock
-        - coverage
-        - pytest==7.1.2
-        - pytest-cov
-        - pytest-subprocess
-        - wheel==0.41.2
-        - setuptools>=61.0.0
+  source_files:
+    - tests/
+    - setup.py
+  imports:
+    - pdbstore
+  commands:
+    - pytest ./tests/unit
+    - pytest ./tests/cli
+    - pip check
+  requires:
+    - pip
+    - mock
+    - coverage
+    - pytest==7.1.2
+    - pytest-cov
+    - pytest-subprocess
+    - wheel==0.41.2
+    - setuptools>=61.0.0
 
 about:
   home: "https://github.com/crabisoft/pdbstore"
