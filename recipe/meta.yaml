@@ -1,5 +1,5 @@
 {% set name = "pdbstore" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 479af295adff07754fc8cdd8af2d85ede27518b705487650c04a42b28c612f24
+  sha256: 9acf587cc597205b93fe71a79623b58f14755104f313d5ff20677f7d4b0d4ec8
 
 build:
   noarch: python
@@ -51,6 +51,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: COPYING
+  description: "Command-line utility to manage PDB and PE files through local symbol store on Windows, Linux and MacOS"
   summary: "manage PDB and PE files through a local symbols store"
   doc_url: "https://pdbstore.readthedocs.io"
   dev_url: "https://github.com/crabisoft/pdbstore"
