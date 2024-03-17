@@ -1,5 +1,5 @@
 {% set name = "pdbstore" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 9acf587cc597205b93fe71a79623b58f14755104f313d5ff20677f7d4b0d4ec8
+  sha256: 20fe7d51d0689dd95066b6e88421d20f3bbafbdc7266785b48ce45d68d966c2e
 
 build:
   noarch: python
@@ -27,24 +27,24 @@ requirements:
     - Jinja2
 
 test:
-    source_files:
-        - tests/
-        - setup.py
-    imports:
-        - pdbstore
-    commands:
-        - pytest ./tests/unit
-        - pytest ./tests/cli
-        - pip check
-    requires:
-        - pip
-        - mock
-        - coverage
-        - pytest==7.1.2
-        - pytest-cov
-        - pytest-subprocess
-        - wheel==0.41.2
-        - setuptools>=61.0.0
+  source_files:
+    - tests/
+    - setup.py
+  imports:
+    - pdbstore
+  commands:
+    - pytest ./tests/unit
+    - pytest ./tests/cli
+    - pip check
+  requires:
+    - pip
+    - mock
+    - coverage
+    - pytest==7.1.2
+    - pytest-cov
+    - pytest-subprocess
+    - wheel==0.41.2
+    - setuptools>=61.0.0
 
 about:
   home: "https://github.com/crabisoft/pdbstore"
