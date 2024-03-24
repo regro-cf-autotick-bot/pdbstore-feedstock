@@ -1,5 +1,5 @@
 {% set name = "pdbstore" %}
-{% set version = "0.3.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: c67adb614f36bb5c4634faea06762e30cc47faa0cd8ec879d1e0880cf864a4f7
+  sha256: dbba7b7332191c082535160cd0198721635f45b775db31df0ed3c120db895338
 
 build:
   noarch: python
