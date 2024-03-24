@@ -13,6 +13,8 @@ Development: https://github.com/crabisoft/pdbstore
 
 Documentation: https://pdbstore.readthedocs.io
 
+Command-line utility to manage PDB and PE files through local symbol store on Windows, Linux and MacOS
+
 Current build status
 ====================
 
